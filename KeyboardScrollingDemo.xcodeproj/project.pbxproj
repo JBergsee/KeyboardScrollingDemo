@@ -13,6 +13,15 @@
 		04D82D3327D8BEF9008B0A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D3127D8BEF9008B0A33 /* Main.storyboard */; };
 		04D82D3527D8BEFA008B0A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D3427D8BEFA008B0A33 /* Assets.xcassets */; };
 		04D82D3827D8BEFA008B0A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D3627D8BEFA008B0A33 /* LaunchScreen.storyboard */; };
+		04D82D4027D8BF2F008B0A33 /* JourneyLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D82D3F27D8BF2F008B0A33 /* JourneyLogViewController.swift */; };
+		04D82D4227D8BF3B008B0A33 /* RemarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D82D4127D8BF3B008B0A33 /* RemarksViewController.swift */; };
+		04D82D4427D8BF46008B0A33 /* RemarksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D4327D8BF46008B0A33 /* RemarksView.xib */; };
+		04D82D4627D8BF4C008B0A33 /* RemarksBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D4527D8BF4C008B0A33 /* RemarksBoard.storyboard */; };
+		04D82D4827D8BF58008B0A33 /* KeyboardScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D82D4727D8BF58008B0A33 /* KeyboardScrollingViewController.swift */; };
+		04D82D4A27D8C0B4008B0A33 /* InfoBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D4927D8C0B4008B0A33 /* InfoBoard.storyboard */; };
+		04D82D4C27D8C0BB008B0A33 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D82D4B27D8C0BB008B0A33 /* InfoViewController.swift */; };
+		04D82D4E27D8C150008B0A33 /* JourneyLogBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D82D4D27D8C150008B0A33 /* JourneyLogBoard.storyboard */; };
+		04D82D5027D8C3D9008B0A33 /* MultiPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D82D4F27D8C3D9008B0A33 /* MultiPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,16 @@
 		04D82D3427D8BEFA008B0A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D82D3727D8BEFA008B0A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D82D3927D8BEFA008B0A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D82D3F27D8BF2F008B0A33 /* JourneyLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyLogViewController.swift; sourceTree = "<group>"; };
+		04D82D4127D8BF3B008B0A33 /* RemarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemarksViewController.swift; sourceTree = "<group>"; };
+		04D82D4327D8BF46008B0A33 /* RemarksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemarksView.xib; sourceTree = "<group>"; };
+		04D82D4527D8BF4C008B0A33 /* RemarksBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RemarksBoard.storyboard; sourceTree = "<group>"; };
+		04D82D4727D8BF58008B0A33 /* KeyboardScrollingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardScrollingViewController.swift; sourceTree = "<group>"; };
+		04D82D4927D8C0B4008B0A33 /* InfoBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InfoBoard.storyboard; sourceTree = "<group>"; };
+		04D82D4B27D8C0BB008B0A33 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		04D82D4D27D8C150008B0A33 /* JourneyLogBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JourneyLogBoard.storyboard; sourceTree = "<group>"; };
+		04D82D4F27D8C3D9008B0A33 /* MultiPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPageViewController.swift; sourceTree = "<group>"; };
+		04D82D5127D90D13008B0A33 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +59,7 @@
 		04D82D1F27D8BEF9008B0A33 = {
 			isa = PBXGroup;
 			children = (
+				04D82D5127D90D13008B0A33 /* README.md */,
 				04D82D2A27D8BEF9008B0A33 /* KeyboardScrollingDemo */,
 				04D82D2927D8BEF9008B0A33 /* Products */,
 			);
@@ -63,6 +83,15 @@
 				04D82D3427D8BEFA008B0A33 /* Assets.xcassets */,
 				04D82D3627D8BEFA008B0A33 /* LaunchScreen.storyboard */,
 				04D82D3927D8BEFA008B0A33 /* Info.plist */,
+				04D82D4727D8BF58008B0A33 /* KeyboardScrollingViewController.swift */,
+				04D82D4F27D8C3D9008B0A33 /* MultiPageViewController.swift */,
+				04D82D3F27D8BF2F008B0A33 /* JourneyLogViewController.swift */,
+				04D82D4D27D8C150008B0A33 /* JourneyLogBoard.storyboard */,
+				04D82D4127D8BF3B008B0A33 /* RemarksViewController.swift */,
+				04D82D4327D8BF46008B0A33 /* RemarksView.xib */,
+				04D82D4527D8BF4C008B0A33 /* RemarksBoard.storyboard */,
+				04D82D4927D8C0B4008B0A33 /* InfoBoard.storyboard */,
+				04D82D4B27D8C0BB008B0A33 /* InfoViewController.swift */,
 			);
 			path = KeyboardScrollingDemo;
 			sourceTree = "<group>";
@@ -125,7 +154,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D82D4427D8BF46008B0A33 /* RemarksView.xib in Resources */,
 				04D82D3827D8BEFA008B0A33 /* LaunchScreen.storyboard in Resources */,
+				04D82D4E27D8C150008B0A33 /* JourneyLogBoard.storyboard in Resources */,
+				04D82D4627D8BF4C008B0A33 /* RemarksBoard.storyboard in Resources */,
+				04D82D4A27D8C0B4008B0A33 /* InfoBoard.storyboard in Resources */,
 				04D82D3527D8BEFA008B0A33 /* Assets.xcassets in Resources */,
 				04D82D3327D8BEF9008B0A33 /* Main.storyboard in Resources */,
 			);
@@ -140,7 +173,12 @@
 			files = (
 				04D82D3027D8BEF9008B0A33 /* ViewController.swift in Sources */,
 				04D82D2C27D8BEF9008B0A33 /* AppDelegate.swift in Sources */,
+				04D82D4027D8BF2F008B0A33 /* JourneyLogViewController.swift in Sources */,
+				04D82D4C27D8C0BB008B0A33 /* InfoViewController.swift in Sources */,
+				04D82D4827D8BF58008B0A33 /* KeyboardScrollingViewController.swift in Sources */,
 				04D82D2E27D8BEF9008B0A33 /* SceneDelegate.swift in Sources */,
+				04D82D4227D8BF3B008B0A33 /* RemarksViewController.swift in Sources */,
+				04D82D5027D8C3D9008B0A33 /* MultiPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
