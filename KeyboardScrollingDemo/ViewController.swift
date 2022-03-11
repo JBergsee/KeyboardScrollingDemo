@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var example1VC:InfoViewController?
     private var example2VC:JourneyLogViewController?
+    private var example3VC:BaseViewController?
     
     
     override func viewDidLoad() {
@@ -19,19 +19,24 @@ class ViewController: UIViewController {
         
         //Load  view controllers
         
-        let sb = UIStoryboard(name: "InfoBoard", bundle: .main)
-        example1VC = (sb.instantiateViewController(withIdentifier: "Info") as? InfoViewController)!
-        
         example2VC = JourneyLogViewController.initFromStoryboard()
+        
+        let sb = UIStoryboard(name: "JourneyLogBoard", bundle: .main)
+        example3VC = (sb.instantiateViewController(withIdentifier: "Base") as? ViewOnBaseViewController)!
+        
     }
 
 
     @IBAction func loadExample1() {
-        self.navigationController?.pushViewController(example1VC!, animated: true)
+        print("No longer here.")
     }
     
     @IBAction func loadExample2() {
         self.navigationController?.pushViewController(example2VC!, animated: true)
+    }
+    
+    @IBAction func loadExample3() {
+        self.navigationController?.pushViewController(example3VC!, animated: true)
     }
     
 }

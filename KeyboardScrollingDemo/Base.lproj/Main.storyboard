@@ -25,11 +25,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJo-TT-BHM">
-                                <rect key="frame" x="360.5" y="470.5" width="89" height="31"/>
+                                <rect key="frame" x="354.5" y="470.5" width="101.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Example 1"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Deactivated"/>
                                 <connections>
                                     <action selector="loadExample1" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHc-es-rtc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgo-L0-9wc">
+                                <rect key="frame" x="359" y="686.5" width="92" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Example 3"/>
+                                <connections>
+                                    <action selector="loadExample3" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nr-Ig-ene"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,7 +45,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="i6v-sE-7pz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3SV-rE-j4e"/>
+                            <constraint firstItem="vgo-L0-9wc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVl-AT-GlN"/>
                             <constraint firstItem="eJo-TT-BHM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="bKA-tl-iK2"/>
+                            <constraint firstItem="vgo-L0-9wc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.3" id="cGg-oj-P0B"/>
                             <constraint firstItem="eJo-TT-BHM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iG0-mJ-lTL"/>
                             <constraint firstItem="i6v-sE-7pz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.1" id="qvz-jK-Mfa"/>
                         </constraints>

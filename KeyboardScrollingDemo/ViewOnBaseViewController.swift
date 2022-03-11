@@ -8,7 +8,7 @@
 import UIKit
 
 
-class RemarksViewController: KeyboardScrollingViewController {
+class ViewOnBaseViewController: BaseViewController {
     
     @IBOutlet var labelFlight: UILabel!
     @IBOutlet var tvRemarks: UITextView!
@@ -16,19 +16,27 @@ class RemarksViewController: KeyboardScrollingViewController {
     @IBOutlet var asrSwitch: UISwitch!
     @IBOutlet var safaSwitch: UISwitch!
     
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Load specific view
+        let nibname = "ViewToAddOnBase"; //Get configuration name from appsettings
+        guard let content = Bundle.main.loadNibNamed(nibname, owner: self, options: nil)?.first as? UIView else {
+            assertionFailure("Could not load view from nib '\(nibname)'.")
+            return
+        }
+        //Set in cell
+        load(content: content)
 
-        //Set the same look on textview as textfields
-        tvRemarks.addSquareBorder()
         
         //Copy info from JourneyLogInfo
         setupView()
     }
     
     func setupView() {
+        //Set the same look on textview as textfields
+        tvRemarks.addSquareBorder()
         labelFlight.text = "ESSA - KFOR"
         tvRemarks.text = ""
         tfTraining.text = ""

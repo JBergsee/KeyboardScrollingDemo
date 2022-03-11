@@ -9,18 +9,18 @@ import UIKit
 
 
 public class JourneyLogViewController: MultiPageViewController {
-
-   
+    
+    
     enum JourneyLogPage:Int, CustomStringConvertible, CaseIterable {
-        case remarks
-        case info
-
+        case onScrollView
+        case onTableView
+        
         var description: String {
             switch self {
-            case .remarks:
-                return "Remarks"
-            case .info:
-                return "Info"
+            case .onScrollView:
+                return "On UIScrollView"
+            case .onTableView:
+                return "On UITableView"
             }
         }
     }
@@ -28,7 +28,7 @@ public class JourneyLogViewController: MultiPageViewController {
     private lazy var viewControllers:[UIViewController] = Array()
     
     @IBOutlet var footer:UIView!
-
+    
     public static func initFromStoryboard() -> Self {
         let storyboard = UIStoryboard(name: "JourneyLogBoard", bundle: .main)
         return storyboard.instantiateViewController(withIdentifier: "JourneyLogViewController") as! Self
@@ -53,28 +53,27 @@ public class JourneyLogViewController: MultiPageViewController {
     }
     
     private func createViewControllers() {
-
+        
         //Load the viewControllers
         var viewController:UIViewController
         
         for page in JourneyLogPage.allCases {
-        
+            
             switch page {
-            
-            case .remarks:
-                let sb = UIStoryboard(name: "RemarksBoard", bundle: .main)
+                
+            case .onScrollView:
+                let sb = UIStoryboard(name: "JourneyLogBoard", bundle: .main)
                 viewController = (sb.instantiateViewController(withIdentifier: "Remarks") as? RemarksViewController)!
-            
-            
-        case .info:
-                let sb = UIStoryboard(name: "InfoBoard", bundle: .main)
-                viewController = (sb.instantiateViewController(withIdentifier: "Info") as? InfoViewController)!
+                
+            case .onTableView:
+                let sb = UIStoryboard(name: "JourneyLogBoard", bundle: .main)
+                viewController = (sb.instantiateViewController(withIdentifier: "Base") as? ViewOnBaseViewController)!
             }
             
             
             self.viewControllers.append(viewController)
         }
-            
+        
     }
-
+    
 }
